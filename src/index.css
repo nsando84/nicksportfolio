@@ -9,7 +9,6 @@ body {
   
 }
 
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -29,3 +28,54 @@ code {
 }
 
 
+.navbar-style  {
+  height: '100px';
+  margin-left: '10%';
+  margin-right: '10%';
+  background-color: 'rgba(0,0,0,0.0)';
+};
+
+
+.brand-style {
+  color: 'white';
+  font-size: '27px';
+};
+
+.brand-style-small  {
+  color: 'white';
+  font-size: '15px';
+}
+
+.logo-style {
+  height: '60px';
+}
+
+@media (max-width: 500px) {
+  .navbar .navbar-brand {
+    margin: auto;
+   
+  }
+
+  .navbar-nav{
+    margin: auto;
+
+  }
+
+}
+
+@media (max-width: 850px) {
+  .navbar {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .navbar .navbar-brand>div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    }
+
+  .navbar-nav>a {
+    margin: 5px !important;
+
+  }
+}
