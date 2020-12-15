@@ -13,14 +13,14 @@ const Projects = () => {
             <div className="small-project-wrapper mt-5 text-left">
             {ProjectsInfo.map((elemInfo, index) => {
                 return (
-                <div className="d-flex justify-content-between mx-auto" key={index}>
-                   <div>
-                    <img src={elemInfo.url} alt={elemInfo.title} className="project-image d-block p-3" />
+                <div className="d-md-flex justify-content-between" key={index}>
+                   <div className="">
+                    <img src={elemInfo.url} alt={elemInfo.title} className="project-image d-block p-3 mx-auto" />
                    </div>
                    <div className="ml-3">
                     <span className="d-block small-project-title text-center">{elemInfo.title}</span>
                     <p className="small-project-description">{elemInfo.description}</p>
-                    <p className="text-center"><img src={GitHubLogo} /><a href={elemInfo.github} target="_blank" className="ml-1">View Code</a></p>
+                    <p className="text-center"><img src={GitHubLogo} alt="github logo "/><a href={elemInfo.github} target="_blank" rel="noreferrer" className="ml-1">View Code</a></p>
                     </div>     
                 </div>
                 )

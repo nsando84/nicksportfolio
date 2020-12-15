@@ -156,6 +156,21 @@ code {
 
 }
 
+@media (max-width: 500px) {
+  .project-wrapper {
+    margin-top: 75px !important;
+    
+  }
+   
+  }
+
+@media (max-width: 759px) {
+  .small-project-wrapper {
+    text-align: center;
+  }
+}
+
+
 @media (max-width: 850px) {
   .navbar {
     margin-left: 0 !important;
