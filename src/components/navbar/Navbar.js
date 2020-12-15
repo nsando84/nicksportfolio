@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import Logo from '../../assets/logo1.png'
 
 const NavbarMain = () => {
+    const [ navState , setNavState ] = useState(1)
+
     console.log('hih')
     return (
         <Navbar expand="sm" style={navBarStyle} className="navbar-expand d-flex flex-wrap">
@@ -17,31 +19,41 @@ const NavbarMain = () => {
                 <Nav className="ml-auto h-100" activeKey="link-0">
                  
                     <Nav.Link 
-                        style={brandStyle} 
+                        style={brandStyle}
                         eventKey="link-0" 
-                        className="mx-4"
+                        className={navState == 1 ? 'border-bottom border-danger mx-4' : 'mx-4'}
                         onClick={() => {
-                            console.log('hi')
+                            setNavState(1)
+                            console.log('1')
                         }}
                         >
-                        <span className="text-danger">{leftBracket}</span> Home <span className="text-danger">{rightBracket}</span>
+                        Home
                         </Nav.Link>
 
                     <Nav.Link 
                         style={brandStyle} 
                         eventKey="link-1" 
-                        className="mx-4"
-                    
-                    >Projects</Nav.Link>
+                        className={navState == 2 ? 'border-bottom border-danger mx-4' : 'mx-4'}
+                        onClick={() => {
+                            setNavState(2)
+                            console.log('2')
+                        }}      
+                        >
+                        Projects      
+                        </Nav.Link>
 
 
                     <Nav.Link 
                         style={brandStyle} 
                         eventKey="link-2" 
-                        className="mx-4"
-                        
-                        >
-                        Contact</Nav.Link>
+                        className={navState == 3 ? 'border-bottom border-danger mx-4' : 'mx-4'}
+                        onClick={() => {
+                            setNavState(3)
+                            console.log('3')
+                        }}
+                        >   
+                        Contact
+                        </Nav.Link>
       
                 </Nav>
                
@@ -73,7 +85,3 @@ const brandStyleSmall = {
 const logoStyle = {
     height: '60px'
 }
-
-const leftBracket = `{  `
-
-const rightBracket = `  }`
