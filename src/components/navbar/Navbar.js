@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
 import Logo from '../../assets/logo1.png'
 
@@ -21,7 +22,9 @@ const NavbarMain = () => {
                     <Nav.Link 
                         style={brandStyle}
                         eventKey="link-0" 
-                        className={navState == 1 ? 'border-bottom border-danger mx-4' : 'mx-4'}
+                        className={navState === 1 ? 'border-bottom border-danger mx-4' : 'mx-4'}
+                        as={Link}
+                        to="/home"
                         onClick={() => {
                             setNavState(1)
                             console.log('1')
@@ -33,7 +36,9 @@ const NavbarMain = () => {
                     <Nav.Link 
                         style={brandStyle} 
                         eventKey="link-1" 
-                        className={navState == 2 ? 'border-bottom border-danger mx-4' : 'mx-4'}
+                        className={navState === 2 ? 'border-bottom border-danger mx-4' : 'mx-4'}
+                        as={Link}
+                        to="/projects"
                         onClick={() => {
                             setNavState(2)
                             console.log('2')
@@ -46,7 +51,9 @@ const NavbarMain = () => {
                     <Nav.Link 
                         style={brandStyle} 
                         eventKey="link-2" 
-                        className={navState == 3 ? 'border-bottom border-danger mx-4' : 'mx-4'}
+                        className={navState === 3 ? 'border-bottom border-danger mx-4' : 'mx-4'}
+                        as={Link}
+                        to="/contact"
                         onClick={() => {
                             setNavState(3)
                             console.log('3')

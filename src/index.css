@@ -50,6 +50,41 @@ code {
   height: '60px';
 }
 
+/* Home Pagwe */
+
+.home-div {
+  max-width: 900px;
+  margin-top: 100px;
+
+}
+
+.title-span {
+  font-size: 125px;
+  margin-left: 10%;
+}
+ .paragraph-span {
+  font-size: 20px;
+  margin-left: 15%;
+
+ }
+
+ .home-button {
+    margin-left: 25%;
+    border-radius: 0% !important;
+    background-color: rgba(255, 0, 0, 0.541) !important;
+    padding-right: 45px !important;
+    padding-left: 45px !important;
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+    border: none;
+    letter-spacing: 2px;
+ }
+
+ .home-button>span {
+   font-size: 20px;
+ }
+ 
+
 @media (max-width: 500px) {
   .navbar .navbar-brand {
     margin: auto;
@@ -59,6 +94,11 @@ code {
   .navbar-nav{
     margin: auto;
 
+  }
+
+  .title-span {
+    font-size: 50px;
+    margin-left: 10%;
   }
 
 }
@@ -78,4 +118,31 @@ code {
     margin: 5px !important;
 
   }
+
+  .title-span {
+    font-size: 85px;
+    margin: auto;
+  }
+   .paragraph-span {
+    font-size: 20px;  
+    margin: 0 5%;
+   }
+
+   .home-button {
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 0% !important;
+    padding-right: 18px !important;
+    padding-left: 18px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    border: none;
+    letter-spacing: 0;
+ }
+
+ .home-button>span {
+   font-size: 20px;
+ }
+
 }
