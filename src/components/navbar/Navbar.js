@@ -1,17 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
 import Logo from '../../assets/logo1.png'
 
 const NavbarMain = () => {
-    const [ navState , setNavState ] = useState(1)
+
     const usePathname = () => {
         const location = useLocation();
         return location.pathname
     }
     const pathLocation = usePathname()
 
-    console.log('hih')
     return (
         <Navbar expand="sm" style={navBarStyle} className="navbar-expand d-flex flex-wrap">
            
@@ -30,10 +29,6 @@ const NavbarMain = () => {
                         className={pathLocation !== '/contact' &&  pathLocation !== '/projects' ? 'border-bottom border-danger mx-4' : 'mx-4'}
                         as={Link}
                         to="/home"
-                        onClick={() => {
-                            setNavState(1)
-                            console.log('1')
-                        }}
                         >
                         Home
                         </Nav.Link>
@@ -43,11 +38,7 @@ const NavbarMain = () => {
                         eventKey="link-1" 
                         className={pathLocation === '/projects' ? 'border-bottom border-danger mx-4' : 'mx-4'}
                         as={Link}
-                        to="/projects"
-                        onClick={() => {
-                            setNavState(2)
-                            console.log('2')
-                        }}      
+                        to="/projects"  
                         >
                         Projects      
                         </Nav.Link>
@@ -59,10 +50,6 @@ const NavbarMain = () => {
                         className={pathLocation === '/contact' ? 'border-bottom border-danger mx-4' : 'mx-4'}
                         as={Link}
                         to="/contact"
-                        onClick={() => {
-                            setNavState(3)
-                            console.log('3')
-                        }}
                         >   
                         Contact
                         </Nav.Link>
