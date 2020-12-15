@@ -88,7 +88,7 @@ code {
  /* Projects */
 
 .project-wrapper {
-  max-width: 900px;
+  max-width: 800px;
   margin-top: 25px !important;
   margin: auto;
   text-align: center;
@@ -101,10 +101,32 @@ code {
   font-size: 45px;
 }
 
+.small-project-wrapper {
+  width: 80%;
+  margin: auto;
+}
+
 .project-image {
   width: 300px;
   height: 300px;
 }
+
+.small-project-title {
+  font-size: 20px;
+  background-color: #ffffff;
+  background-image: linear-gradient(270deg, #f883e8, #fa0303);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.small-project-description {
+  font-size: 15px;
+}
+/*  */
+
 
 @media (max-width: 500px) {
   .navbar .navbar-brand {

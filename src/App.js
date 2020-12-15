@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './containers/Home';
 import Contact from './containers/Contact';
-import Projects from './containers/Projects'
+import Projects from './containers/Projects/Projects'
 
 
 
