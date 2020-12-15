@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
 import Logo from '../../assets/logo1.png'
 
 const NavbarMain = () => {
     const [ navState , setNavState ] = useState(1)
+    const usePathname = () => {
+        const location = useLocation();
+        return location.pathname
+    }
+    const pathLocation = usePathname()
 
     console.log('hih')
     return (
@@ -22,7 +27,7 @@ const NavbarMain = () => {
                     <Nav.Link 
                         style={brandStyle}
                         eventKey="link-0" 
-                        className={navState === 1 ? 'border-bottom border-danger mx-4' : 'mx-4'}
+                        className={pathLocation !== '/contact' &&  pathLocation !== '/projects' ? 'border-bottom border-danger mx-4' : 'mx-4'}
                         as={Link}
                         to="/home"
                         onClick={() => {
@@ -36,7 +41,7 @@ const NavbarMain = () => {
                     <Nav.Link 
                         style={brandStyle} 
                         eventKey="link-1" 
-                        className={navState === 2 ? 'border-bottom border-danger mx-4' : 'mx-4'}
+                        className={pathLocation === '/projects' ? 'border-bottom border-danger mx-4' : 'mx-4'}
                         as={Link}
                         to="/projects"
                         onClick={() => {
@@ -51,7 +56,7 @@ const NavbarMain = () => {
                     <Nav.Link 
                         style={brandStyle} 
                         eventKey="link-2" 
-                        className={navState === 3 ? 'border-bottom border-danger mx-4' : 'mx-4'}
+                        className={pathLocation === '/contact' ? 'border-bottom border-danger mx-4' : 'mx-4'}
                         as={Link}
                         to="/contact"
                         onClick={() => {

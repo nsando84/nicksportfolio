@@ -85,6 +85,26 @@ code {
  }
  
 
+ /* Projects */
+
+.project-wrapper {
+  max-width: 900px;
+  margin-top: 25px !important;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(22, 20, 20, 0.842);
+  /* height: 90vh; */
+  border-radius: 5%;
+}
+
+.project-title {
+  font-size: 45px;
+}
+
+.project-info {
+
+}
+
 @media (max-width: 500px) {
   .navbar .navbar-brand {
     margin: auto;
@@ -97,9 +117,19 @@ code {
   }
 
   .title-span {
-    font-size: 50px;
-    margin-left: 10%;
+    font-size: 50px !important;
+    margin: auto !important;
   }
+
+  .paragraph-span {
+    margin: auto !important;
+    margin-top: 25px !important
+   }
+
+   .home-button {
+    margin: auto !important;
+    margin-top: 45px !important
+   }
 
 }
 
@@ -120,8 +150,7 @@ code {
   }
 
   .title-span {
-    font-size: 85px;
-    margin: auto;
+    font-size: 75px;
   }
    .paragraph-span {
     font-size: 20px;  
@@ -130,8 +159,6 @@ code {
 
    .home-button {
     margin-top: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
     border-radius: 0% !important;
     padding-right: 18px !important;
     padding-left: 18px !important;
