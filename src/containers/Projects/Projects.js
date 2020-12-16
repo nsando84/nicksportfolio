@@ -16,6 +16,9 @@ const Projects = () => {
         modalPic = modal.url
     }
 
+    
+
+
     return ( 
         <>
         <div className="text-light project-wrapper">  
@@ -57,8 +60,10 @@ const Projects = () => {
             <div className="small-project-wrapper mt-5 text-left">
             {ProjectsInfo.map((elemInfo, index) => {
                 return (
-                <div className="d-md-flex justify-content-between" key={index}>
-                   <div className="">
+                <div className="d-md-flex justify-content-between mt-5" key={index}>
+                    {index % 2 === 0 ? (
+                    <>   
+                   <div>
                     <img 
                         onClick={() => {
                             setModal({
@@ -75,10 +80,36 @@ const Projects = () => {
                     <span className="d-block small-project-title text-center">{elemInfo.title}</span>
                     <p className="small-project-description">{elemInfo.description}</p>
                     <p className="text-center"><img src={GitHubLogo} alt="github logo "/><a href={elemInfo.github} target="_blank" rel="noreferrer" className="ml-1">View Code</a></p>
-                    </div>  
-                    
-                       
+                    </div> 
+                    </>  
+                    )
+                    :    
+                        (
+                        <>
+                            <div className="ml-3">
+                            <span className="d-block small-project-title text-center">{elemInfo.title}</span>
+                            <p className="small-project-description">{elemInfo.description}</p>
+                            <p className="text-center"><img src={GitHubLogo} alt="github logo "/><a href={elemInfo.github} target="_blank" rel="noreferrer" className="ml-1">View Code</a></p>
+                            </div> 
+                            <div>
+                            <img 
+                                onClick={() => {
+                                    setModal({
+                                        show: true,
+                                        url: elemInfo.url
+                                    })
+                                }}
+                                src={elemInfo.url} 
+                                alt={elemInfo.title} 
+                                className="project-image d-block p-3 mx-auto" 
+                                />
+                        </div>
+                        </>
+                        )
+                    }
+
                 </div>
+                
                 )
 
             })}
@@ -90,12 +121,3 @@ const Projects = () => {
 }
 
 export default Projects
-
-// const modalStyles = {
-//     top: '50%',
-//     left: '50%',
-//     right: 'auto',
-//     bottom: 'auto',
-//     marginRight: '-50%',
-//     transform: 'translate(-50%, -50%)'
-// }

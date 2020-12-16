@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: 'Ubuntu', sans-serif;;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
   
 }
 
@@ -20,7 +21,9 @@ code {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  /* margin-bottom: 20px; */
+  /* overflow: hidden; */
 }
 
 .Navbar {
@@ -55,7 +58,7 @@ code {
 .home-div {
   max-width: 900px;
   margin-top: 100px;
-
+  height: 100vh;
 }
 
 .title-span {
@@ -93,8 +96,10 @@ code {
   margin: auto;
   text-align: center;
   background-color: rgba(22, 20, 20, 0.842);
-  /* height: 90vh; */
+  /* max-height: 90vh; */
+  overflow-y: auto;
   border-radius: 5%;
+  /* margin-bottom: 50px; */
 }
 
 .project-title {
@@ -129,7 +134,7 @@ code {
 /* Modal  */
 
 .Modal {
-  display: flex;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
@@ -137,7 +142,7 @@ code {
     top: 0;
     width: 100%;
     height: 100%;
-  transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .Backdrop {
