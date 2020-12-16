@@ -24,23 +24,36 @@ const Projects = () => {
                 <span className="project-title d-block">Projects</span>
                 <span className="project-info d-block">These are some of my recent projects</span>
             </div>
+            {modal.show &&
+            <>
             <div 
-                className="Modal container-fluid" 
-                style={{
-                    transform: modal.show ? 'translateY(0)' : 'translateY(-100vh)',
-                    opacity: modal.show  ? '1' : '0'
-                    
-                    
-                    }}>      
-                    <img 
-                        src={modalPic} 
-                        alt="zoomedpic"
-                        style={{
-                            maxWidth: '600px', 
-                            maxHeight: '600px',
-                        }}
-                    />
+                className="Backdrop"
+                onClick={() => {
+                    setModal({
+                        show: false,
+                        url: null
+                    })
+                }}
+                >
+                <div 
+                    className="Modal container-fluid" 
+                    style={{
+                        transform: modal.show ? 'translateY(0)' : 'translateY(-100vh)',
+                        opacity: modal.show  ? '1' : '0'     
+                        }}>      
+                        <img 
+                            src={modalPic} 
+                            alt="zoomedpic"
+                            style={{
+                                maxWidth: '600px', 
+                                maxHeight: '600px',
+                            }}
+                            
+                        />
+                </div>
             </div>
+            </>
+            }
             <div className="small-project-wrapper mt-5 text-left">
             {ProjectsInfo.map((elemInfo, index) => {
                 return (
