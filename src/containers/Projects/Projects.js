@@ -48,7 +48,7 @@ const Projects = () => {
                             src={modalPic} 
                             alt="zoomedpic"
                             style={{
-                                maxWidth: '600px', 
+                                maxWidth: '700px', 
                                 maxHeight: '600px',
                             }}
                             
