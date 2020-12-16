@@ -91,14 +91,14 @@ code {
  /* Projects */
 
 .project-wrapper {
-  max-width: 800px;
+  max-width: 900px;
   margin-top: 25px !important;
   margin: auto;
   text-align: center;
   background-color: rgba(22, 20, 20, 0.842);
   /* max-height: 90vh; */
   overflow-y: auto;
-  border-radius: 5%;
+ 
   /* margin-bottom: 50px; */
 }
 
@@ -112,8 +112,8 @@ code {
 }
 
 .project-image {
-  width: 300px;
-  height: 300px;
+  width: 325px;
+  height: 325px;
 }
 
 .small-project-title {
