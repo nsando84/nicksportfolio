@@ -23,7 +23,6 @@ const Projects = () => {
         <>
         <div className="text-light project-wrapper">  
             <div className="project-title-wrapper">
-
                 <span className="project-title d-block">Projects</span>
                 <span className="project-info d-block">These are some of my recent projects</span>
             </div>
@@ -45,12 +44,13 @@ const Projects = () => {
                         opacity: modal.show  ? '1' : '0'     
                         }}>      
                         <img 
+                            className="modalImage"
                             src={modalPic} 
                             alt="zoomedpic"
-                            style={{
-                                maxWidth: '700px', 
-                                maxHeight: '600px',
-                            }}
+                            // style={{
+                            //     maxWidth: '700px', 
+                            //     maxHeight: '600px',
+                            // }}
                             
                         />
                 </div>

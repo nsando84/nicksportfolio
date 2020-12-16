@@ -29,7 +29,7 @@ const usaf = {
 const employeeDirectory = {
     url: employeeImg,
     title: 'Employee Management Directory (React/MongoDB)',
-    description: 'Developed Employee directory with MERN stack. Uses CRUD design capabilities. Client-side uses React class-components, service-layer API uses NodeJS/Express, and data-layer persistence is provided by NoSQL DB - MongoDB Atlas via ODB, Mongoose.',
+    description: 'Employee Management Application. App uses CRUD design capabilities. Client-side uses React class-components, service-layer API uses NodeJS/Express, and data-layer persistence is provided by NoSQL DB - MongoDB Atlas via ODB, Mongoose.',
     github: 'https://github.com/nsando84/Employee-Directory-Now'
 };
 

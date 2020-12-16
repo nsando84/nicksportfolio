@@ -22,7 +22,7 @@ code {
   background-position: center;
   width: 100%;
   height: 100%;
-  /* margin-bottom: 20px; */
+  padding-bottom: 50px;
   /* overflow: hidden; */
 }
 
@@ -91,15 +91,12 @@ code {
  /* Projects */
 
 .project-wrapper {
-  max-width: 900px;
+  max-width: 1000px;
   margin-top: 25px !important;
   margin: auto;
   text-align: center;
   background-color: rgba(22, 20, 20, 0.842);
-  /* max-height: 90vh; */
   overflow-y: auto;
- 
-  /* margin-bottom: 50px; */
 }
 
 .project-title {
@@ -109,6 +106,7 @@ code {
 .small-project-wrapper {
   width: 80%;
   margin: auto;
+  margin-bottom: 50px;
 }
 
 .project-image {
@@ -155,12 +153,17 @@ code {
   background-color: rgba(0, 0, 0, 0.781);
 }
 
+.modalImage {
+  max-width: 700px;
+  max-height: 600px;
+}
+
 /*  */
 
 @media (max-width: 500px) {
   .navbar .navbar-brand {
-    margin: auto;
-   
+    margin-left: 0;
+    
   }
 
   .navbar-nav{
@@ -187,28 +190,29 @@ code {
     margin-top: 75px !important;
     
   }
+
+  .home-div {
+    text-align: center;
+    padding: 15px;
   }
 
-@media (max-width: 600px) {
-  
-
-    .Modal {
-        width: 400px;
-        left: 0;
-        right: 0;
-        /* margin: 0; */
-        padding: 0;
-        margin: auto;
-        /* left: calc(50% - 250px); */
-    }
-   
-  }
-
+}
 
 
 @media (max-width: 759px) {
   .small-project-wrapper {
     text-align: center;
+  }
+
+  .modalImage {
+    width: 100%;
+    height: 90%;
+  }
+  
+  .Modal {
+    width: 400px;
+    height: 325px;
+    margin-top: 50%;
   }
 }
 
