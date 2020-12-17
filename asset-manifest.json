@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/nicksportfolio/static/css/main.0bc3bf46.chunk.css",
-    "main.js": "/nicksportfolio/static/js/main.14112596.chunk.js",
-    "main.js.map": "/nicksportfolio/static/js/main.14112596.chunk.js.map",
+    "main.css": "/nicksportfolio/static/css/main.e591a8e0.chunk.css",
+    "main.js": "/nicksportfolio/static/js/main.3473088d.chunk.js",
+    "main.js.map": "/nicksportfolio/static/js/main.3473088d.chunk.js.map",
     "runtime-main.js": "/nicksportfolio/static/js/runtime-main.52683fd8.js",
     "runtime-main.js.map": "/nicksportfolio/static/js/runtime-main.52683fd8.js.map",
     "static/css/2.20aa2d7b.chunk.css": "/nicksportfolio/static/css/2.20aa2d7b.chunk.css",
@@ -10,22 +10,22 @@
     "static/js/2.de039810.chunk.js.map": "/nicksportfolio/static/js/2.de039810.chunk.js.map",
     "index.html": "/nicksportfolio/index.html",
     "static/css/2.20aa2d7b.chunk.css.map": "/nicksportfolio/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.0bc3bf46.chunk.css.map": "/nicksportfolio/static/css/main.0bc3bf46.chunk.css.map",
+    "static/css/main.e591a8e0.chunk.css.map": "/nicksportfolio/static/css/main.e591a8e0.chunk.css.map",
     "static/js/2.de039810.chunk.js.LICENSE.txt": "/nicksportfolio/static/js/2.de039810.chunk.js.LICENSE.txt",
-    "static/media/airforcePT.261d0492.png": "/nicksportfolio/static/media/airforcePT.261d0492.png",
-    "static/media/easybudget.f601b99d.png": "/nicksportfolio/static/media/easybudget.f601b99d.png",
-    "static/media/employeed.37f53606.png": "/nicksportfolio/static/media/employeed.37f53606.png",
-    "static/media/ihostel.e0695217.png": "/nicksportfolio/static/media/ihostel.e0695217.png",
+    "static/media/airforcePT.6cceb88d.png": "/nicksportfolio/static/media/airforcePT.6cceb88d.png",
+    "static/media/easybudget.09b58e7f.png": "/nicksportfolio/static/media/easybudget.09b58e7f.png",
+    "static/media/employeed.56a0fee5.png": "/nicksportfolio/static/media/employeed.56a0fee5.png",
+    "static/media/ihostel.d2771304.png": "/nicksportfolio/static/media/ihostel.d2771304.png",
     "static/media/index.css": "/nicksportfolio/static/media/image1.2f0d2ede.jpg",
     "static/media/ispaceimg.d15f9f60.png": "/nicksportfolio/static/media/ispaceimg.d15f9f60.png",
     "static/media/logo1.4955ae93.png": "/nicksportfolio/static/media/logo1.4955ae93.png",
-    "static/media/whatcookie.9954c810.png": "/nicksportfolio/static/media/whatcookie.9954c810.png"
+    "static/media/whatcookie.fb541ed2.png": "/nicksportfolio/static/media/whatcookie.fb541ed2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.52683fd8.js",
     "static/css/2.20aa2d7b.chunk.css",
     "static/js/2.de039810.chunk.js",
-    "static/css/main.0bc3bf46.chunk.css",
-    "static/js/main.14112596.chunk.js"
+    "static/css/main.e591a8e0.chunk.css",
+    "static/js/main.3473088d.chunk.js"
   ]
 }
