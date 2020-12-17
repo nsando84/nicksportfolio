@@ -15,11 +15,13 @@ const NavbarMain = () => {
         <Navbar expand="sm" style={navBarStyle} className="navbar-expand d-flex flex-wrap">
            
             <Navbar.Brand href="#home" className="d-inline-flex">
-                <div className="mr-2"><img alt="logo" src={Logo} style={logoStyle}/></div>
-                <div>
-                <div style={brandStyle}>N. Sandoval</div>
-                <div style={brandStyleSmall}>Full Stack Developer</div>
-                </div>
+                <Link to="/" style={{textDecoration: 'none', color: 'unset'}}>
+                    <div className="mr-2"><img alt="logo" src={Logo} style={logoStyle}/></div>
+                    <div>
+                    <div style={brandStyle}>N. Sandoval</div>
+                    <div style={brandStyleSmall}>Full Stack Developer</div>
+                    </div>
+                </Link>
             </Navbar.Brand>
                 <Nav className="ml-auto h-100" activeKey="link-0">
                  
