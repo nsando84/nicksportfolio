@@ -68,8 +68,9 @@ const Projects = () => {
                             }}
                             src={elemInfo.url} 
                             alt={elemInfo.title} 
-                            className="project-image p-3" 
+                            className="project-image p-3 d-block mx-auto" 
                         />
+                        <p style={{fontSize: '10px'}}>click image to enlarge</p>
                     </div>
                     <div className="">
                         <span className="d-block small-project-title text-center">{elemInfo.title}</span>
@@ -97,8 +98,9 @@ const Projects = () => {
                                         }}
                                         src={elemInfo.url} 
                                         alt={elemInfo.title} 
-                                        className="project-image p-3" 
+                                        className="project-image p-3 d-block mx-auto" 
                                         />
+                                    <p style={{fontSize: '10px'}}>click image to enlarge</p>
                                 </div>
                             </div>
                         </>

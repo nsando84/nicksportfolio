@@ -22,7 +22,7 @@ const Contact = () => {
                         <div className="text-center contact-icon">
                             <img src={LinkedIn} alt="linked in"/>
                             <span className="d-block contact-type">LinkedIn</span>
-                            <span className="d-block mt-3"><a href="https://www.linkedin.com/in/nick16s/" target="_blank">linkedin.com/in/nick16s/</a></span>
+                            <span className="d-block mt-3"><a href="https://www.linkedin.com/in/nick16s" target="_blank" rel="noreferrer">linkedin.com/in/nick16s</a></span>
                         </div>
                     </div>
 
@@ -32,7 +32,7 @@ const Contact = () => {
                         <div className="text-center contact-icon">
                             <img src={GitHub} alt="github"/>
                             <span className="d-block contact-type" >GitHub</span>
-                            <span className="d-block mt-3"><a href="https://github.com/nsando84" target="_blank">github.com/nsando84</a></span>
+                            <span className="d-block mt-3"><a href="https://github.com/nsando84" target="_blank" rel="noreferrer">github.com/nsando84</a></span>
                         </div>
                 </div>
             </div>

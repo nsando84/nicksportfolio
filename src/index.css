@@ -101,7 +101,7 @@ code {
 
 .project-wrapper {
   max-width: 1000px;
-  margin-top: 25px !important;
+  margin-top: 35px !important;
   margin: auto;
   text-align: center;
   background-color: rgba(22, 20, 20, 0.842);
@@ -138,6 +138,7 @@ code {
 .small-project-description {
   font-size: 15px;
 }
+
 
 /* Modal  */
 
@@ -249,12 +250,12 @@ code {
   }
 
   .contact-wrapper {
-    margin-top: 75px;  
+    margin-top: 120px;  
     height: 100%;
   }
 
   .contact-icon {
-    margin-top: 15px;
+    margin-top: 45px;
   }
 }
 
