@@ -52,10 +52,10 @@ const Projects = () => {
             </div>
             </>
             }
-            <div className="small-project-wrapper mt-5">
+            <div className="small-project-wrapper mt-5 mx-auto">
             {ProjectsInfo.map((elemInfo, index) => {
                 return (
-                <div className="d-md-flex justify-content-between mt-5" key={index}>
+                <div className="d-md-flex justify-content-between mt-3" key={index}>
                     {index % 2 === 0 ? (
                     <>   
                    <div className="img-div">
@@ -81,23 +81,25 @@ const Projects = () => {
                     :    
                         (
                         <>
-                            <div className="">
-                                <span className="d-block small-project-title text-center">{elemInfo.title}</span>
-                                <p className="small-project-description text-left">{elemInfo.description}</p>
-                                <p className="text-center"><img src={GitHubLogo} alt="github logo "/><a href={elemInfo.github} target="_blank" rel="noreferrer" className="ml-1">View Code</a></p>
-                            </div> 
-                            <div className="img-div">
-                                <img 
-                                    onClick={() => {
-                                        setModal({
-                                            show: true,
-                                            url: elemInfo.url
-                                        })
-                                    }}
-                                    src={elemInfo.url} 
-                                    alt={elemInfo.title} 
-                                    className="project-image p-3" 
-                                    />
+                            <div className="flex-column-reverse row flex-md-row">
+                                <div className="col">
+                                    <span className="d-block small-project-title text-center">{elemInfo.title}</span>
+                                    <p className="small-project-description text-left">{elemInfo.description}</p>
+                                    <p className="text-center"><img src={GitHubLogo} alt="github logo "/><a href={elemInfo.github} target="_blank" rel="noreferrer" className="ml-1">View Code</a></p>
+                                </div> 
+                                <div className="img-div col">
+                                    <img 
+                                        onClick={() => {
+                                            setModal({
+                                                show: true,
+                                                url: elemInfo.url
+                                            })
+                                        }}
+                                        src={elemInfo.url} 
+                                        alt={elemInfo.title} 
+                                        className="project-image p-3" 
+                                        />
+                                </div>
                             </div>
                         </>
                         )
