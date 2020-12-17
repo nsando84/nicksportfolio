@@ -47,11 +47,6 @@ const Projects = () => {
                             className="modalImage"
                             src={modalPic} 
                             alt="zoomedpic"
-                            // style={{
-                            //     maxWidth: '700px', 
-                            //     maxHeight: '600px',
-                            // }}
-                            
                         />
                 </div>
             </div>

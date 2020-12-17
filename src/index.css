@@ -158,9 +158,38 @@ code {
   max-height: 600px;
 }
 
+/* Contact */
+
+.contact-wrapper {
+  max-width: 900px;
+  margin-top: 100px;
+  height: 100vh;
+  margin: auto
+  
+}
+
+.contact-title {
+  font-size: 45px;
+  text-align: center;
+}
+
+.contact-type {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.contact-wrapper a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.contact-wrapper a:hover {
+  text-decoration: none !important;
+  color: grey;
+}
 /*  */
 
-@media (max-width: 500px) {
+@media (max-width: 525px) {
   .navbar .navbar-brand {
     margin-left: 0;
     
@@ -199,7 +228,7 @@ code {
 }
 
 
-@media (max-width: 759px) {
+@media (max-width: 600px) {
   .small-project-wrapper {
     text-align: center;
   }
@@ -211,7 +240,7 @@ code {
   
   .Modal {
     width: 400px;
-    height: 325px;
+    height: 355px;
     margin-top: 50%;
   }
 }
