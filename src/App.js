@@ -4,22 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './containers/Home';
 import Contact from './containers/Contact';
 import Projects from './containers/Projects/Projects'
-import Amplify, { Analytics, API, Auth, graphqlOperation, Storage } from 'aws-amplify';
 
-Analytics.autoTrack('session', {
-  enable: true,
-  provider: 'AWSPinpoint'
-});
-
-Analytics.autoTrack('pageView', {
-  enable: true,
-  eventName: 'pageView',
-  type: 'SPA',
-  provider: 'AWSPinpoint',
-  getUrl: () => {
-      return window.location.origin + window.location.pathname;
-  }
-});
 
 
 

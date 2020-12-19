@@ -22,7 +22,7 @@ const iHostel = {
 const usaf = {
     url: airforceImg,
     title: 'Unofficial Airforce PT Tracker (Handlebars/MongoDB)',
-    description: "Application allows user to insert values and app assigns points to track fitness level against set standards(USAF Fitness Test Scoring). Uses ChartJS for data visualization and IndexedDB to cache local recent searches. Additional, technologies include Handlebars for content and MongoDB for key/value store.",
+    description: "Application allows user to insert values and app assigns points to track fitness level against set standards(USAF Fitness Test Scoring). Uses ChartJS for data visualization and IndexedDB to cache local recent searches. Technologies include Handlebars for content and MongoDB for key/value store.",
     github: 'https://github.com/nsando84/Fitness-Score-Tracker-DB'
 };
 
@@ -36,18 +36,13 @@ const employeeDirectory = {
 const easyBudget = {
     url: easyImg,
     title: 'Easy Budget (ES6/MongoDB)',
-    description: 'Budget Management Application. App uses service workers, indexedDb, & Background Sync to allow application to work offline without any change in functionality or user experience.  Data is saved into MongoDB Atlas when connection is re-established.',
+    description: 'Budget Management Application. App uses service workers, indexedDb, & Background Sync to allow application to work offline without any change in functionality or user experience.  Data is saved into MongoDB Atlas when connection is reestablished.',
     github: 'https://github.com/nsando84/Easy-Budget'
 };
 
-const whatCookie = {
-    url: cookieImg,
-    title: 'Cookie Creator (Handlerbars/MySQL)',
-    description: 'Application allows to create a cookie, random cookie image is assigned to cookie. Uses ORM for entries and queries to MySQL DB, dynamic content is generated using Handlebars.',
-    github: 'https://github.com/nsando84/What-cookie'
-}
 
-const projectsInfo = [iSpace, iHostel, usaf, easyBudget, employeeDirectory, whatCookie]
+
+const projectsInfo = [iSpace, iHostel, usaf, easyBudget, employeeDirectory]
 
 
 
