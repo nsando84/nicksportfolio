@@ -249,9 +249,9 @@ code {
     padding: 15px;
   }
 
-  .contact-wrapper {
-    margin-top: 120px;  
-    height: 100%;
+  .small-contact-wrapper {
+    margin-top: 120px;
+    padding-top: 5px !important;
   }
 
   .contact-icon {

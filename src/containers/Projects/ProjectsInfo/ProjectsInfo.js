@@ -3,7 +3,7 @@ import ihostelImg from '../../../assets/ihostel.png';
 import airforceImg from '../../../assets/airforcePT.png';
 import employeeImg from '../../../assets/employeed.png';
 import easyImg from '../../../assets/easybudget.png';
-import cookieImg from '../../../assets/whatcookie.png'
+
 
 const iSpace = {
     url: ispaceImg,
