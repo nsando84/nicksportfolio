@@ -250,12 +250,9 @@ code {
   }
 
   .contact-wrapper {
-    margin-top: 120px;
+    /* margin-top: 120px; */
   }
 
-  .small-contact-wrapper {
-    padding-top: 5px;
-  }
 
   .contact-icon {
     margin-top: 45px;
