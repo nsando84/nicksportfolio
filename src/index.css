@@ -250,7 +250,12 @@ code {
   }
 
   .contact-wrapper {
-    /* margin-top: 120px; */
+    margin-top: 120px;
+    height: 100%;
+  }
+
+  .small-contact-wrapper {
+    padding-top: 5px;
   }
 
 
