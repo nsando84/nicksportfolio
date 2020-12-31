@@ -11,8 +11,9 @@ import Projects from './containers/Projects/Projects';
 
 
 ReactGA.initialize('UA-186306647-1')
-const browserHistory = createBrowserHistory()
-browserHistory.listen((location, action) => {
+const history = createBrowserHistory()
+
+history.listen((location, action) => {
   ReactGA.pageview(location.pathname + location.search)
 })
 
@@ -23,7 +24,7 @@ function App() {
   }, [])
 
   return (
-    <Router browserHistory={browserHistory}>
+    <Router history={history}>
 
       <Navbar />
       <Switch>
