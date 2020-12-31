@@ -10,7 +10,7 @@ import Projects from './containers/Projects/Projects';
 
 
 
-ReactGA.initialize('G-453W5RDG98')
+ReactGA.initialize('UA-186306647-1')
 const browserHistory = createBrowserHistory()
 browserHistory.listen((location, action) => {
   ReactGA.pageview(location.pathname + location.search)
