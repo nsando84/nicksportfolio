@@ -49,7 +49,7 @@ const easyBudget = {
 
 
 
-const projectsInfo = [iSpace, iHostel, friendSHIPS, usaf, easyBudget, employeeDirectory]
+const projectsInfo = [friendSHIPS, iHostel, iSpace, usaf, easyBudget, employeeDirectory]
 
 
 
